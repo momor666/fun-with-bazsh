@@ -7,3 +7,8 @@ dump of dummy bash/zsh scripts
 Takes an airplane registration number and prints all the code words.
 For example, input TI-BAZ would outpu Tango - India - Bravo - Alpha - Zulu
 
+## cd-wrapper.sh
+
+wraps the unix cd (change directory) tool and aliases it to a function
+that instead of only cd'ing, checks if the directory exists, if it
+doesn't, then creates it to finally invoke original cd
