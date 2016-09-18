@@ -20,3 +20,6 @@ function cdc() {
     fi  
     cd "${1}"
 }
+
+# Optional: define an alias
+# alias cd="cdc"
