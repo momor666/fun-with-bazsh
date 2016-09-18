@@ -1,3 +1,11 @@
 # fun-with-bazsh
 
 dump of dummy bash/zsh scripts
+
+# search-alias.sh
+
+It shows all the aliases defined that contains the provided 
+keyword(s).
+Useful when you use oh-my-zsh plugins that define a bunch of new aliases
+(git-extras for example) and you don't know all of them but, deep inside you,
+want to learn them.
