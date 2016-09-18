@@ -12,3 +12,11 @@ For example, input TI-BAZ would outpu Tango - India - Bravo - Alpha - Zulu
 wraps the unix cd (change directory) tool and aliases it to a function
 that instead of only cd'ing, checks if the directory exists, if it
 doesn't, then creates it to finally invoke original cd
+
+# search-alias.sh
+
+It shows all the aliases defined that contains the provided 
+keyword(s).
+Useful when you use oh-my-zsh plugins that define a bunch of new aliases
+(git-extras for example) and you don't know all of them but, deep inside you,
+want to learn them.
