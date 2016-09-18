@@ -1,3 +1,9 @@
 # fun-with-bazsh
 
 dump of dummy bash/zsh scripts
+
+## cd-wrapper.sh
+
+wraps the unix cd (change directory) tool and aliases it to a function
+that instead of only cd'ing, checks if the directory exists, if it
+doesn't, then creates it to finally invoke original cd
