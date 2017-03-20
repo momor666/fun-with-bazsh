@@ -37,3 +37,27 @@ function backup() {
     fi
 }
 
+function restore() {
+    if [ ${#} -lt 1 ]; then
+        echo "ERROR: Missing required argument: <backup-to-restore>";
+        echo "Usage: $ restore <backup-to-restore>";
+        return 1
+    else
+        backup_file=${1}
+        if [ -f "$PWD/$backup_file" ]; then
+            length=$(expr length $backup_file - 32);
+            name=${backup_file:0:$length}
+            if cp $backup_file $name ; then
+                echo "Restored file '$name' from backup '$backup_file'";
+                return 0
+            else
+                echo "Restore failed. Check directory permissions and try again.";
+                return 1
+            fi
+        else
+            echo "ERROR: File '$backup_file' doesn't exist!";
+            return 1
+        fi
+    fi
+}
+
