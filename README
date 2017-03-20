@@ -13,10 +13,18 @@ wraps the unix cd (change directory) tool and aliases it to a function
 that instead of only cd'ing, checks if the directory exists, if it
 doesn't, then creates it to finally invoke original cd
 
-# search-alias.sh
+## search-alias.sh
 
 It shows all the aliases defined that contains the provided 
 keyword(s).
 Useful when you use oh-my-zsh plugins that define a bunch of new aliases
-(git-extras for example) and you don't know all of them but, deep inside you,
+(git-extras for example) and you don't know all of them but deep inside you
 want to learn them.
+
+## backup.sh
+
+It takes a file and creates an exact copy of it with the
+current date and hour appended to the file's original name.
+Additionally, it offers a 'restore' command which does 
+the exact reverse proccess: it takes a backup copy of a file
+and restores it.
